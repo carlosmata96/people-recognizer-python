@@ -6,7 +6,7 @@ Recognizes a face from an encoded list of faces stored in mongodb
 
 ## Result
 
-<img width="289" src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/master/img/johnRegister.png">
+<img  src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/johnRegister.png">
 
 # Compare person
 
