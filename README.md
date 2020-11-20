@@ -6,7 +6,7 @@ Recognizes a face from an encoded list of faces stored in mongodb
 * pymongo 3.11.1
 * dnspython 2.0.0
 
-#Installation
+# Installation
 * python3 -m venv ./venv
 * source venv/bin/activate
 * pip3 install -r requirements.txt
