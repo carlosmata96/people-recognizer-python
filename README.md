@@ -1,9 +1,20 @@
 # people-recognizer-python
 Recognizes a face from an encoded list of faces stored in mongodb
- 
-<img width="33%" src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/mongodb.png">
-<img width="33%" src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/pythonlogo.png"> 
-<img width="30%" src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/flask_logo.png"> 
+<table>
+<thead>
+<tr>
+<th>
+<img  src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/mongodb.png">
+</th>
+<th>
+<img width="50%" src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/pythonlogo.png"> 
+</th>
+<th>
+<img  src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/flask_logo.png"> 
+</th>
+</tr>
+</thead>
+</table>
 
 ---
 
