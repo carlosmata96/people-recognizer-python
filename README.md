@@ -2,7 +2,7 @@
 Recognizes a face from an encoded list of faces stored in mongodb
  
 <img width="33%" src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/mongodb.png">
-<img width="33%" src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/python_logo.png"> 
+<img width="33%" src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/pythonlogo.png"> 
 <img width="33%" src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/flask_logo.png"> 
 
 ---
