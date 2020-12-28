@@ -28,10 +28,10 @@ Recognizes a face from an encoded list of faces stored in mongodb.
 * source venv/bin/activate
 * pip3 install -r requirements.txt
 
-# Commands
+or
+>> source install.sh
 
-### parameter.py
->> parameters to edit before using the commands, contains the connection to the mongo server, database, the collection, and the maximum tolerance to recognize a person.
+# Commands
 
 ### loadPerson.py
 >> Used to add a new person in mongodb.
@@ -40,6 +40,10 @@ Recognizes a face from an encoded list of faces stored in mongodb.
 >> Used to compare an image of an unknown person with stored records.
 
 # Parameters of parameter.py
+
+### parameter.py
+Parameters to edit before using the commands, contains the connection to the mongo server, database, the collection and the maximum tolerance value to recognize a person.
+
 
 >URL_MONGO
 >> URL connection for connect  recognition system with it respective storage .

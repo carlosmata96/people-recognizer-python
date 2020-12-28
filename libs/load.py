@@ -10,16 +10,19 @@ def get_collection():
     return connection.get_collection()
 
 
-def upload_file(file_path, identification):
+def upload_file(identification, file_path=None, binary=None):
     """
     Register matrix with Encodings of a face to DataBase
     """
     collection = get_collection()
     doc_people = collection.find_one({fields.get_field_main(): identification})
     if doc_people:
-        print('{0} ya se encuentra registrado/a'.format(identification))
+        print('{0} Already Registered'.format(identification))
         exit()
-    image = face_recognition.load_image_file(file_path)
+    if binary is not None:
+        image = face_recognition.load_image_file(binary)
+    else:
+        image = face_recognition.load_image_file(file_path)
     face_location = face_recognition.face_locations(image, model='cnn')
     face_encoding = face_recognition.face_encodings(image, known_face_locations=face_location)
     if len(face_encoding) == 0:
@@ -30,7 +33,7 @@ def upload_file(file_path, identification):
         'encode': face_encoding[0].tolist()
     }
     result = collection.insert_one(document)
-    print(result.inserted_id)
+    return str(result.inserted_id)
 
 
 def get_list_identification():
@@ -42,14 +45,17 @@ def get_list_identification():
     return identifications
 
 
-def compare_pictures(pictures):
+def compare_pictures(paths=None, binaries=None):
     """
     Compare a list pictures to evaluate an identity
     """
     list_distances = []
     collection = get_collection()
     people = collection.find()
-    image = face_recognition.load_image_file(pictures)
+    if binaries is not None:
+        image = face_recognition.load_image_file(binaries)
+    else:
+        image = face_recognition.load_image_file(paths)
     face_encoding = face_recognition.face_encodings(image)
     for p in people:
         distance = face_recognition.face_distance(np.matrix(p.get('encode')), face_encoding[0])
