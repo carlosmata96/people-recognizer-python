@@ -76,4 +76,9 @@ Recognizes a face from an encoded list of faces stored in mongodb.
 
 >> [{'name':'john', 'distance': '0.334556'}]
 
+## Architecture
+
+<img  src="https://raw.githubusercontent.com/carlosmata96/people-recognizer-python/main/img/architecture_design.png"> 
+
+
 Create with ❤️ by [Carlos Mata](https://github.com/carlosmata96)
