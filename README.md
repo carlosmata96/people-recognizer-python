@@ -1,5 +1,5 @@
 # people-recognizer-python
-Recognizes a face from an encoded list of faces stored in mongodb
+Recognizes a face from an encoded list of faces stored in mongodb.
 <table>
 <thead>
 <tr>
@@ -31,13 +31,34 @@ Recognizes a face from an encoded list of faces stored in mongodb
 # Commands
 
 ### parameter.py
->> parameters to edit before using the commands, contains the connection to the mongo server, database, the collection, and the maximum tolerance to recognize a person
+>> parameters to edit before using the commands, contains the connection to the mongo server, database, the collection, and the maximum tolerance to recognize a person.
 
 ### loadPerson.py
->> Used to add a new person in mongodb
+>> Used to add a new person in mongodb.
 
 ### recognize.py
 >> Used to compare an image of an unknown person with stored records.
+
+# Parameters of parameter.py
+
+>URL_MONGO
+>> URL connection for connect  recognition system with it respective storage .
+
+---
+
+>DATABASE_NAME 
+>> Name of database that container lots of collections to process the different tasks of system.
+
+---
+
+>COLLECTION_NAME 
+>> Name of collection used to storing the matrix encoders faces with it respective identification.
+
+---
+
+>TOLERANCE 
+>> It's the tolerance accepted to evaluate encoders matrix saved in database.
+>> #### When will you realice changes at this value the results of algorithm processing may vary!!.
 
 # Register person
 
