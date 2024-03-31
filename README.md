@@ -27,6 +27,7 @@ Recognizes a face from an encoded list of faces stored in mongodb.
 * python3 -m venv ./venv
 * source venv/bin/activate
 * pip3 install -r requirements.txt
+* install driver nvidia 
 
 or
 >> source install.sh

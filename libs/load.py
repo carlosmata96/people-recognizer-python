@@ -23,7 +23,7 @@ def upload_file(identification, file_path=None, binary=None):
         image = face_recognition.load_image_file(binary)
     else:
         image = face_recognition.load_image_file(file_path)
-    face_location = face_recognition.face_locations(image, model='cnn')
+    face_location = face_recognition.face_locations(image)
     face_encoding = face_recognition.face_encodings(image, known_face_locations=face_location)
     if len(face_encoding) == 0:
         print("error to find face")
